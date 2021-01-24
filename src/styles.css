@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  background-image: url('./images/pexels-philippe-donn-1169754.jpg');
+  background-size: 100%;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.material-icons {
+  vertical-align: middle;
+}
+.image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10px 10px 10px;
+}
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc((100% - 120px) / 3);
+  padding: 15px;
+  margin-bottom: 20px;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 1px 16px 0px rgba(0, 0, 0, 0.39);
+}
+.load-more {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 20px 5px 20px;
+}
+
+.load-more.is-hidden {
+  display: none;
+}
+
+.image:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.search-block {
+  display: flex;
+  justify-content: center;
+}
+input {
+  padding: 15px;
+}
